@@ -1,0 +1,46 @@
+package com.example.qcmprojet;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.InputFilter;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+
+public class Qustion5 extends AppCompatActivity implements View.OnClickListener {
+    Button btn_Suiv;
+    RadioGroup rg;
+    RadioButton rb;
+    int score;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_qustion5);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_Suiv:
+                int id = rg.getCheckedRadioButtonId();
+                rb = (RadioButton) findViewById(id);
+                if (rb.getText().toString().equals("Rom")) {
+                    score = getIntent().getExtras().getInt("score");
+                    score = score + 1;
+                }
+                else
+                {
+                    score = getIntent().getExtras().getInt("score");
+                }
+                Toast.makeText(this,String.valueOf(score),Toast.LENGTH_SHORT).show();
+
+        }
+
+    }
+}
+

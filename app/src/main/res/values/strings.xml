@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">QCM Projet</string>
+    <string name="qustion_1">Qustion 1</string>
+    <string name="_3">3</string>
+    <string name="_5">5</string>
+    <string name="_0">0</string>
+    <string name="quelle_est_le_r_sultat_de_cette_adition_1_2">Quelle est le résultat de cette adition :1+2</string>
+    <string name="suivant">Suivant</string>
+    <string name="qustion_3">Qustion 3</string>
+    <string name="c_est_quoi_la_premi_re_lettre_de_mon_pr_nom">C\'est quoi la premiére lettre de mon prénom</string>
+    <string name="l">L</string>
+    <string name="m">M</string>
+    <string name="c">C</string>
+    <string name="question_5">Question 5</string>
+    <string name="rom">Rom</string>
+    <string name="vienne">Vienne</string>
+    <string name="cair">Cair</string>
+    <string name="quelle_est_la_capital_de_l_italie">Quelle est la capital de l\'italie</string>
+    <string name="question2">Question2</string>
+    <string name="demain_je_chef_de_projet">Demain, je ........ chef de projet</string>
+    <string name="serait">Serait</string>
+    <string name="ferait">Ferait</string>
+    <string name="devient">Devient</string>
+    <string name="qustion_4">Qustion 4</string>
+    <string name="france">France</string>
+    <string name="dubai">Dubai</string>
+    <string name="maroc">Maroc</string>
+    <string name="dans_quelle_pays_ce_tiendra_la_prochaine_coupe_du_monde">Dans quelle pays ce tiendra la prochaine coupe du monde</string>
+    <string name="quelle_est_le_rsultat_de_cette_adition_1_2">quelle est le rsultat de cette adition 1 2</string>
+    <string name="demain_je_au_cin_ma">demain je..... au cinéma</string>
+</resources>
