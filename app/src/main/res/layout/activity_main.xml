@@ -25,7 +25,7 @@
             android:id="@+id/textView3"
             android:layout_width="363dp"
             android:layout_height="60dp"
-            android:text="@string/quelle_est_le_rsultat_de_cette_adition_1_2" />
+            android:text="quelle est le resultat de cette adition 1 2" />
 
         <RadioGroup
             android:layout_width="365dp"
@@ -50,7 +50,7 @@
                 android:text="@string/_0" />
 
             <Button
-                android:id="@+id/btn_Suiv1"
+                android:id="@+id/btn_Suiv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/suivant" />

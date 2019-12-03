@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_Suiv;
     RadioGroup rg;
     RadioButton rb;
-    int Score=0;
+    int score=0;
 
 
     @Override
@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 rb = (RadioButton) findViewById(id);
                 if (rb.getText().toString().equals("3"))
             {
-                Score =1;
+                score =1;
             }
                 Intent i = new Intent(this,Qustion2.class);
-                i.putExtra("Score",Score);
+                i.putExtra("score",score);
                 startActivity(i);
         }
 

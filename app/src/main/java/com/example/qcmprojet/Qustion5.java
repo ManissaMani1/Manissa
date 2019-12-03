@@ -21,6 +21,7 @@ public class Qustion5 extends AppCompatActivity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qustion5);
+        rg = (RadioGroup) findViewById(R.id.radio);
     }
 
     @Override
@@ -29,7 +30,7 @@ public class Qustion5 extends AppCompatActivity implements View.OnClickListener 
             case R.id.btn_Suiv:
                 int id = rg.getCheckedRadioButtonId();
                 rb = (RadioButton) findViewById(id);
-                if (rb.getText().toString().equals("Rom")) {
+                if (rb.getText().toString().equals("Rome")) {
                     score = getIntent().getExtras().getInt("score");
                     score = score + 1;
                 }
