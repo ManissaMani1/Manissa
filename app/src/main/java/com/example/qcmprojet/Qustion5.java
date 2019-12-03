@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Qustion5 extends AppCompatActivity implements View.OnClickListener {
-    Button btn_Suiv;
     RadioGroup rg;
     RadioButton rb;
     int score;
@@ -21,10 +22,12 @@ public class Qustion5 extends AppCompatActivity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qustion5);
+        rg = (RadioGroup) findViewById(R.id.radio);
     }
 
     @Override
     public void onClick(View v) {
+
         switch (v.getId()) {
             case R.id.btn_Suiv:
                 int id = rg.getCheckedRadioButtonId();
@@ -32,14 +35,17 @@ public class Qustion5 extends AppCompatActivity implements View.OnClickListener 
                 if (rb.getText().toString().equals("Rom")) {
                     score = getIntent().getExtras().getInt("score");
                     score = score + 1;
+                    System.out.println("score -----> "+score);
                 }
                 else
                 {
                     score = getIntent().getExtras().getInt("score");
                 }
-                Toast.makeText(this,String.valueOf(score),Toast.LENGTH_SHORT).show();
 
+                Toast.makeText(this,String.valueOf(score),Toast.LENGTH_LONG).show();
         }
+
+
 
     }
 }

@@ -41,7 +41,7 @@ public class Qustion2 extends AppCompatActivity  implements View.OnClickListener
                     score = getIntent().getExtras().getInt("score");
                 }
                 Intent i = new Intent(this,Qustion3.class);
-                i.putExtra("Score",score);
+                i.putExtra("score",score);
                 startActivity(i);
         }
 

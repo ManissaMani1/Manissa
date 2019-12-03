@@ -1,3 +1,4 @@
+
 package com.example.qcmprojet;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,13 +15,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_Suiv;
     RadioGroup rg;
     RadioButton rb;
-    int Score=0;
+    int score=0;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         btn_Suiv = (Button)findViewById(R.id.btn_Suiv);
         rg = (RadioGroup)findViewById(R.id.radio);
         btn_Suiv.setOnClickListener(this);
@@ -36,11 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 int id = rg.getCheckedRadioButtonId();
                 rb = (RadioButton) findViewById(id);
                 if (rb.getText().toString().equals("3"))
-            {
-                Score =1;
-            }
+                {
+                    score =1;
+                }
                 Intent i = new Intent(this,Qustion2.class);
-                i.putExtra("Score",Score);
+                i.putExtra("score",score);
                 startActivity(i);
         }
 

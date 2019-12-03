@@ -19,7 +19,7 @@ public class Qustion4 extends AppCompatActivity implements View.OnClickListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qustion5);
+        setContentView(R.layout.activity_qustion4);
         btn_Suiv = (Button) findViewById(R.id.btn_Suiv);
         rg = (RadioGroup) findViewById(R.id.radio);
         btn_Suiv.setOnClickListener(this);
@@ -34,13 +34,14 @@ public class Qustion4 extends AppCompatActivity implements View.OnClickListener 
                 if (rb.getText().toString().equals("Dubai")) {
                     score = getIntent().getExtras().getInt("score");
                     score = score + 1;
+                    System.out.println("Score -----> "+score);
                 }
                 else
                 {
                     score = getIntent().getExtras().getInt("score");
                 }
                 Intent i = new Intent(this, Qustion5.class);
-                i.putExtra("Score", score);
+                i.putExtra("score", score);
                 startActivity(i);
         }
 
