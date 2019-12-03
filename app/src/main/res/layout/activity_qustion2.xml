@@ -37,7 +37,7 @@
                 android:id="@+id/radioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/serait" />
+                android:text="serais" />
 
             <RadioButton
                 android:id="@+id/radioButton2"

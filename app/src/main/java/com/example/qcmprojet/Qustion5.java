@@ -32,10 +32,10 @@ public class Qustion5 extends AppCompatActivity implements View.OnClickListener 
             case R.id.btn_Suiv:
                 int id = rg.getCheckedRadioButtonId();
                 rb = (RadioButton) findViewById(id);
-                if (rb.getText().toString().equals("Rom")) {
+                if (rb.getText().toString().equals("Rome")) {
                     score = getIntent().getExtras().getInt("score");
                     score = score + 1;
-                    System.out.println("score -----> "+score);
+                    
                 }
                 else
                 {

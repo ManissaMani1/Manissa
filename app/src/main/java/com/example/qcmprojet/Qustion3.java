@@ -34,7 +34,7 @@ public class Qustion3 extends AppCompatActivity implements View.OnClickListener 
                 if (rb.getText().toString().equals("M")) {
                     score = getIntent().getExtras().getInt("score");
                     score = score + 1;
-                    System.out.println("Score -----> "+score);
+
                 }
                 else
 

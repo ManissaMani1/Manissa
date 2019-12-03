@@ -31,7 +31,7 @@ public class Qustion2 extends AppCompatActivity  implements View.OnClickListener
             case R.id.btn_Suiv :
                 int id = rg.getCheckedRadioButtonId();
                 rb = (RadioButton) findViewById(id);
-                if (rb.getText().toString().equals("ira"))
+                if (rb.getText().toString().equals("serais"))
                 {
                     score = getIntent().getExtras().getInt("score");
                     score = score + 1;
