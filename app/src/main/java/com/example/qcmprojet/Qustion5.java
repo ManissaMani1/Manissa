@@ -35,7 +35,7 @@ public class Qustion5 extends AppCompatActivity implements View.OnClickListener 
                 if (rb.getText().toString().equals("Rome")) {
                     score = getIntent().getExtras().getInt("score");
                     score = score + 1;
-                    
+
                 }
                 else
                 {
